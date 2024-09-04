@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8cad9afe67.js" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script>
+      AOS.init();
+    </script>
+  
+  </head>
+  <style>
+    .timeline {
+    position: relative;
+    max-width: auto;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #080808;
+    top: 0;
+    bottom: 0;
+    left: 20px; /* Adjust this for timeline line position */
+}
+
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 100%; /* Make sure it covers the full width */
+}
+
+.timeline-item::before {
+    content: " ";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 15px;
+    height: 15px;
+    background-color: no;
+    border: 4px solid #060606;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-content {
+    margin-left: 50px; /* Space between the timeline line and content */
+    padding: 20px;
+    position: relative;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    color: #0f0e0e;
+    font-weight: bold;
+}
+
+.timeline-content .date {
+    display: block;
+    font-size: 14px;
+    color: #777;
+    margin-top: 10px;
+}
+  </style>
+  <body >
+    <div class="container-fluid px-4 py-4 ml-auto fixed-top text-uppercase" style="background-color: #ffeae8">
+      <div class="container" style="border-radius: 15PX;" >
+      <nav class="navbar navbar-expand-lg navbar-light bg-light "  style="border-radius: 15PX;" >
+        <div class="container-fluid" >
+          <a class="navbar-brand" href="#" style="color: #060606; font-size: 20PX;"><B>PORTFOLIO</B>   </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="color: #060606; font-size: 20PX;"><B>Home</B>   </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: #060606; font-size: 20PX;"><B>ABOUT</B>   </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: #060606; font-size: 20PX;"><B>BLOG</B>    </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" style="color: #060606; font-size: 20PX;" href="#" tabindex="-1" aria-disabled="true"><B>CONTACT DETAILS</B>    </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+    
+    
+
+    <div class="container-FLUID mt-5" style="background-color: #ffeae8">
+      <div class="container px-5 py-4 mt-5"
+        style="
+          background-color: #ffeae8;
+          border-radius: 20px;">
+        <div class="row px-5 py-4 mt-5" style="background-color: #ffeae8">
+          <div class="col-lg-5 col-md-6 col-sm-12 mx-auto my-4">
+            <div data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="500">
+              <h4 class="position-relative" style="font-family: Georgia, 'Times New Roman', Times, serif">
+                Hello!
+                <img
+    src="assets/images/waving.svg"
+    alt=""
+    style="
+      margin-left: 10px;
+      width: auto;
+      height: auto;
+    "
+  />
+              </h4>
+              <p
+                class="mt-3"
+                style="
+                  font-size: 2rem;
+                  font-family: Arial, Helvetica, sans-serif;
+                "
+              >
+                <b>I am <i>Amrutha</i>,</b><br />
+                <b>Python Full Stack Intern</b>
+              </p>
+            </div>
+          
+            <div
+            class="bg-light px-3 py-3 mt-4 position-relative"
+            style="
+              border: 2px solid rgb(36, 35, 35);
+              box-shadow: 10px 10px 0px 0px rgb(208, 199, 199);
+              border-radius: 25px;
+              z-index: 1;
+            "
+          >
+            <img
+              src="assets/images/quote-svgrepo-com.svg"
+              alt=""
+              style="
+                position: absolute;
+                top: -30px;
+                left: 10px;
+                width: 100vw;
+                max-width:50px;
+                height: auto;
+                z-index: 2;
+              "
+            />
+              <b><i>I am</i></b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sapiente, aut modi quaerat ad impedit nihil illum sequi perferendis quo dolores a tempora at, est soluta suscipit saepe veniam aperiam?
+          
+              <div class="mt-3 d-flex align-items-center">
+                <button class="btn btn-outline-dark me-3" style="width: 100px; height: 40px;">Hire Me</button>
+                <i class="fa-brands fa-github" style="font-size: 1em;"></i> &nbsp;&nbsp;
+                <i class="fa-brands fa-behance" style="font-size: 1em;"></i>&nbsp;&nbsp;
+                <i class="fa-brands fa-linkedin" style="font-size: 1em;"></i>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="abc position-relative">
+              
+              <!-- Button Container -->
+              <!-- <div class="position-absolute" style="top: 450px; left: 30px; z-index: 1;">
+                <button class="btn btn-dark" style="width: 100%; max-width: 15vw; height: 5vw;">
+                  <b>See My Work Now</b> <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div> -->
+              
+              <!-- Star SVGs -->
+              <!-- <img
+                src="/assets/img/star.svg"
+                alt=""
+                style="position: absolute; top: 50px; left: 220px; width: 5vw; height: auto; z-index: 2;"
+              /> -->
+              
+             
+              
+              <!-- Positioned SVG -->
+              <!-- <img
+                src="/assets/img/pppointed.svg"
+                alt=""
+                style="position: absolute; top: 190px; left: -170px; width: 9vw; height: auto; z-index: 1;"
+              /> -->
+            </div>
+            
+            <!-- Main Container with Image -->
+            <div data-aos="zoom-in-down"
+              class="position-relative mt-3"
+              style="
+                width: 100%;
+                height: 35vw;
+                border-radius: 50%;
+                border: 2px solid black;
+                background-color: #f9f5f5;
+                overflow: hidden;
+                position: absolute;
+                z-index: 1;
+                box-shadow: 10px 10px 0px 0px rgb(208, 199, 199);
+              "
+            >
+              <img
+                src="assets/images/5.jpg"
+                class="img-fluid"
+                alt="Portrait of Amrutha"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  position: absolute;
+                  top: 0;
+                  z-index: 1;
+                  left: 0;
+                "
+              />
+              <div class="mt-2">
+                <img src="assets/images/asset.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-1"></div>
+          <div class="container mt-3" style="display: flex; justify-content: center; align-items: center;" data-aos="flip-down" data-aos-duration="3000">
+            <i class="fa-solid fa-arrow-down" style="font-size: 4em;"></i>
+        </div>
+        
+        </div>
+
+        
+      </div>
+      <div class="container px-5 py-4"
+        style="
+          background-color: #eaeef3;
+         
+          border-radius: 35px 50px 0px 0px;">
+
+<div class="container border-1 py-3 mt-1 "  >
+    <div class="row" >
+    
+        <div class="col-12 py-3"  style="background-color: #eff4f9; border-radius: 10px; border:2px solid black ">
+       <p style="font-size: 20px; margin-bottom: 0%;" >  <b>    Hello Again.!</b> <i style="color: rgb(4, 4, 4);font-size: 1em;" class="fa-solid fa-face-smile-beam"></i>  </p> 
+            <p style="font-size: 19px; margin: 0%; color: black;">   <i>   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sed numquam minus laborum reiciendis veniam! Pariatur quasi nemo distinctio, hic temporibus sit dolore, cupiditate quod ducimus esse, rerum doloremque nesciunt.
+                Pariatur quasi nemo distinctio, hic temporibus sit dolore, cupiditate quod ducimus esse, rerum doloremque nesciunt.
+            </i>  </p>
+            
+            <div>
+    
+            </div>
+    
+            <div class="mt-3">
+                <button class="btn btn-dark me-2">Download CV</button>
+                <button class="btn btn-outline-dark">Contact Me</button>
+            </div>
+        </div>
+        
+    </div>
+    <div class="container">
+      <div class="row">
+        <!-- Timeline Section -->
+        <div class="col-md-6 mt-3">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-icon"></div>
+              <div class="timeline-content">
+                <h6><strong> Technical Content Developer</strong>    </h6>
+                <p>Description of the event. Details go here.</p>
+                <span class="date">2024-01-01</span>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <h6> <strong>Software Developer Trainer</strong></h6>
+                <p>Description of the event. Details go here.</p>
+                <span class="date">2024-02-01</span>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-icon"></div>
+              <div class="timeline-content">
+                <h6><strong> Software Associate</strong>   </h6>
+                <p>Description of the event. Details go here</p>
+                <span class="date">2024-02-01</span>
+              </div>
+            </div>
+            <!-- Add more timeline items as needed -->
+          </div>
+        </div>
+    
+        <!-- Skills Section -->
+        <div class="col-md-6 mt-3">
+          <div class="container bg-white border py-3">
+            <p class="mb-1">PYTHON</p>
+            <div class="progress mb-2">
+              <div class="progress-bar bg-dark" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+            </div>
+            <p class="mb-1">HTML</p>
+            <div class="progress mb-2">
+              <div class="progress-bar bg-dark" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+            </div>
+            <p class="mb-1">CSS</p>
+            <div class="progress mb-2">
+              <div class="progress-bar bg-dark" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+            </div>
+            <p class="mb-1">JAVASCRIPT</p>
+            <div class="progress mb-2">
+              <div class="progress-bar bg-dark" role="progressbar" style="width: 76%;" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100">76%</div>
+            </div>
+            <p class="mb-1">BOOTSTRAP</p>
+            <div class="progress mb-2">
+              <div class="progress-bar bg-dark" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">55%</div>
+            </div>
+            <p class="mb-1">DJANGO</p>
+            <div class="progress mb-2">
+              <div class="progress-bar bg-dark" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+        </div>
+          </div>
+
+    </div>
+    
+
+
+
+
+
+    
+
+
+
+<div class="container border-1 py-3 mt-1 mb-3">
+<div class="row" >
+    <div class="text-center " style="font-size: 30px;">             <b><u> Projects</u></b>
+    </div>
+    <div class="row d-flex justify-content-center" data-aos="fade-up" data-aos-duration="3000" >
+        <div class="col-10 py-3 mt-2" style="background-color: #e3e8ed; border-radius: 10px; border: 2px solid black;">
+            <div class="row">
+                <!-- Left Column: Image -->
+                <div class="col-md-4">
+                    <img src="assets/images/6682c64a4bdd1942846911.jpg" class="img-fluid w-100" alt="">
+                </div>
+                <!-- Right Column: Text -->
+                <div class="col-md-8">
+                    <p style="font-size: 25px;" class="fw-bold">Shadow Be Fearless</p>
+                    <p>A web application. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit ullam, repudiandae velit delectus error dolore mollitia eos ut provident at harum exercitationem aliquam ea, est eligendi dignissimos magnam vitae fugit?</p>
+                    <button class="btn btn-dark me-2" style="border-radius: 10px;box-shadow: 5px 2px 30px rgb(63, 58, 58);">View Project</button>
+                </div>
+
+                
+            </div>
+
+            
+        </div>
+
+        <div class="col-10 py-3 mt-2" style="background-color: #e3e8ed; border-radius: 10px; border: 2px solid black;">
+            <div class="row">
+                <!-- Left Column: Image -->
+                <div class="col-md-4">
+                    <img src="assets/images/63936d34c126e207568194.png" class="img-fluid w-100" alt="">
+                </div>
+                <!-- Right Column: Text -->
+                <div class="col-md-8">
+                    <p style="font-size: 25px;" class="fw-bold">Netflix Clone</p>
+                    <p>A web application. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit ullam, repudiandae velit delectus error dolore mollitia eos ut provident at harum exercitationem aliquam ea, est eligendi dignissimos magnam vitae fugit?</p>
+                    <button class="btn btn-dark me-2" style="border-radius: 10px;box-shadow: 5px 2px 30px rgb(63, 58, 58);">View Project</button>
+                </div>
+
+                
+            </div>
+
+            
+        </div>
+    </div>
+    
+    
+</div>
+
+
+
+
+
+</div>
+</div>
+
+
+  </div>
+  
+
+  
+</div>
+
+
+<div class="container-fluid" style="background-color: #ffffff">
+<div class="container border-1 py-5 mt-0" style="background-color: #ffffff;" >
+    <div class="text-center " style="font-size: 50px;">             <b><u>FAQs</u></b>
+     </div>
+    
+            <div class="row align-items-center justify-content-center text-center mt-5" style="font-size: 40px;">
+                
+                
+             <div class="col-10">
+            <div class="accordion" id="accordionExample"  data-aos="fade-up" data-aos-duration="3000" >
+                
+                <div class="accordion-item "  style="border:2px solid rgb(251, 249, 249);border-radius: 10px; height: 100%; "  >
+                  <h2 class="accordion-header " id="headingTwo" style="border-radius: 52px;" >
+                    <button class="accordion-button collapsed py-4"  style="background-color: rgb(112, 112, 112); color: white; border-radius: 10px; font-size: 20px;"   type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                     What tools i used for creating web application
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body" style="font-size: 20px;">
+    
+                            <img src="assets/images/71rf-yB92VL._AC_UF1000,1000_QL80_.jpg" style="width: 100vw; max-width:200px;" alt=""><p>It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </p>
+    
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mt-2" style="border:2px solid rgb(251, 250, 250);border-radius: 10px;" >
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed py-4" style="background-color:  rgb(112, 112, 112);font-size: 20px; color: white; border-radius: 10px;"  type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                     Do you have experience in a team enviournment
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="accordion-item mt-2" style="border:2px solid rgb(251, 250, 250);border-radius: 10px;" >
+                    <h2 class="accordion-header" id="headingFour">
+                      <button class="accordion-button collapsed py-4" style="background-color:  rgb(112, 112, 112);font-size: 20px; color: white; border-radius: 10px;"  type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                       Tell me about your certifications
+                      </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              </div>
+    
+    
+            </div>
+            </div>
+            </div>
+      
+
+<div class="container-fluid text-white py-5 mt-5" style="background-color: #111010"  >
+    <div class="text-center"><h1>Conncet with me</h1></div>
+    <div class="text-center mt-4" style="color: grey; font-size: 25px;">Let's connect and work with great peoples <p style="display: inline-block;color:white ;">Connect Now</p></div>
+    <div>
+        <div class="mt-3 text-center">
+            <button class="btn btn-dark me-2 py-2 px-5 text-center" style="border-radius: 20px; color: white;">Get in Touch</button>
+        </div>
+
+
+        <div class="mt-5 text-center" style="color: grey; font-size: 15px;">
+            2024@copyright not allowed
+        </div>
+
+        <div class="mt-3 text-center" style="color: grey; font-size: 15px;">
+            Made with love <i class="fa-solid fa-heart" style="color: red;"></i>
+        </div>
+
+    </div>
+            </div>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
